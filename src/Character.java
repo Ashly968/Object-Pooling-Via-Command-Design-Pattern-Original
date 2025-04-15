@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public abstract class Character {
+public class Character {
     private static final List<Character> characterArrayList = new ArrayList<>();
     private final List<String> inventory = new ArrayList<>();
     private final CommandManager commandManager;
