@@ -11,8 +11,8 @@ public class GameLauncher {
         Character John = Character.getCharacterArrayList().getLast();
 
         for ( int i = 0; i <= 10; i++) {
-            John.getCommandManager().addCommand(new MoveCommand(John, cellArray.get(i+1)));
-            Jane.getCommandManager().addCommand(new MoveCommand(Jane, cellArray.get(i+3)));
+            John.getCommandManager().addCommand(new MoveCommand(John, cellArray.get(i+1), CommandType.MOVE));
+            Jane.getCommandManager().addCommand(new MoveCommand(Jane, cellArray.get(i+3), CommandType.MOVE));
             game.executeStep();
         }
 
