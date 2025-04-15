@@ -3,7 +3,7 @@ public class MoveCommand implements Command {
     private Cell nextCell, previousCell;
     private boolean executed;
 
-    public MoveCommand(Character character, Cell nextCell, CommandType move) {
+    public MoveCommand(Character character, Cell nextCell) {
         this.character = character;
         this.nextCell = nextCell;
         this.previousCell = MapGenerator.getCellAt(character.getPosition().getX(), character.getPosition().getY());
